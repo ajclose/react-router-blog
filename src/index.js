@@ -6,6 +6,7 @@ import App from './components/App';
 import Layout from './components/Layout'
 import CreatePost from './components/CreatePost'
 import PostList from './components/PostList'
+import ShowPost from './components/ShowPost'
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
@@ -13,6 +14,7 @@ ReactDOM.render(
     <Layout>
       <Switch>
         <Route exact path="/" component={App} />
+        <Route path="/show/:id" component={ShowPost} />
         <Route path="/create" component={CreatePost} />
         <Route path="/show" component={PostList} />
       </Switch>

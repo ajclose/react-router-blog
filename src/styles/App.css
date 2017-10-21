@@ -1,4 +1,11 @@
 .splash-header {
   text-align: center;
+}
 
+.post {
+  padding: 10px;
+}
+
+.post h5 {
+  margin-left: 10px;
 }
